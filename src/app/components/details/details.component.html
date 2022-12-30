@@ -1,0 +1,32 @@
+<div class="details">
+    <div class="game-banner">
+        <img src="" alt="background" class="game-banner-img">
+    </div>
+    <div class="game-content">
+        <div class="details-wrapper">
+            <div class="game-header">
+                <h1 class="game-header-title">Game Name</h1>
+                <h2 class="game-header-release-date">
+                    Release: 1.1.2002
+                </h2>
+                <p class="game-header-genres">
+                    <span>RPG</span>
+                </p>
+                <div class="game-gauge">
+                    <mwl-gauge
+                        class="two"
+                        [max]="100"
+                        [dialEndAngle]="0"
+                        [dialStartAngle]="180"
+                        [value]="gameRating"
+                        [animated]="true"
+                        [color]="getColor"
+                        [animationDuration]="2"
+                    >
+                        <a href="" class="game-gauge-label" target="_blank" href="">Metacritic</a>
+                    </mwl-gauge>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
